@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&family=PT+Sans&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'PT sans', sans-serif;
+    user-select: none;
+
+}
+.cursive{
+    font-family: 'Great Vibes', cursive;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px; /* Adjust the height for a very thin track */
+    background: #3f37c9; /* Color code for the track */
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #3f37c9; /* Color code for the slider */
+    cursor: pointer;
+}
+.special{
+    font-family: 'Teko', sans-serif !important;
+}
+.line-effect{
+    position: relative ;
+    padding: 0 1rem;
+    text-shadow: gray 2px 2px;
+}
+.line-effect:before {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 5px;
+    background: #00000072;
+    left: 100%;
+    top: 50%;
+    position: absolute;
+  }
+  .line-effect:after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 5px;
+    background: #00000072;
+    right: 100%;
+    top: 50%;
+    position: absolute;
+  }
+
+
+  .me{
+    background-color: #3f37c9;
+    color: white;
+  }
